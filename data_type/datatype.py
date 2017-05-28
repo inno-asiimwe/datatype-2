@@ -6,8 +6,15 @@ def data_type(given):
     elif type(given) is bool:
         return given
     elif type(given) is int:
-        compare_to_100(given)
+        return compare_to_100(given)
     elif type(given) is list:
         return_third_item(given)
     else:
         return 'type not catered for!'
+def compare_to_100(value):
+    if value < 100:
+        return 'less than 100'
+    elif value == 100:
+        return 'equal to 100'
+    else:
+        return 'more than 100'
