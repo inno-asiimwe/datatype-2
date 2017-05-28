@@ -1,4 +1,7 @@
 def data_type(given):
+    """Define a function called data_type, to take one argument. Compare and return results, based on the argument supplied to the function
+    Implemented by Asiimwe Innocent
+    Assignment from Andela labs for bootcamp """
     if type(given) is str:
         return len(given)
     elif given == None:
